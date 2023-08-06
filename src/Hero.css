@@ -1,0 +1,147 @@
+.upper-container{
+    padding: 1.25rem 0 5rem;
+    background-color: #00585C;
+}
+.navbar{
+    font-family: 'Poppins';
+    color: white;
+}
+.container{
+    display: flex;
+    width: auto;
+    padding: 0 10%;
+}
+.navbar-brand{
+    flex: auto;
+    font-weight: 500;
+    font-size: 28.8px;
+
+}
+.navbar-nav{
+    flex: auto;
+    text-align: center;
+    margin: 0.35rem 0;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-size: 13px;
+}
+.container a:hover{
+    color: #CBDDDD;
+}
+.navbar-login{
+    flex: auto;
+    text-align: right;
+    display: inline;
+}
+.btn-nav{
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #00585C;
+    border-color: white;
+    color: white;
+    font-family: 'Poppins';
+    border-style: solid;
+    font-size: 14px;
+    font-weight: 600;
+    border-width: 1;
+}
+.btn-nav:hover{
+    border-color: #CBDDDD;
+    color: #CBDDDD;
+    cursor: pointer;
+}
+.top-grid{
+    padding-top: 5rem;
+    
+}
+.top-row{
+    display: flex;
+    width: auto;
+    padding: 0 8% 0 10%;
+}
+
+.top-col{
+    flex: 1;
+    justify-content: right;
+    width: 50%;
+    height:50;
+    padding-top: 2%;
+
+}
+.big-text-top{
+    font-family: 'Recoleta';
+    font-size: 40px;
+    color: white;
+    padding: 0.5rem 3.25rem 0 0;
+}
+
+.small-text-top{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 13px;
+    padding: .5rem 4rem 1.5rem 0;
+} 
+
+.btn-grid{
+    padding: 0.6rem 2rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    border-width: 1;
+    border-color: white;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn-grid:hover{
+    color: #00585C;
+    cursor: pointer;
+}
+.top-col > img{
+    border: solid;
+    border-color: white;
+    border-width: 5;
+    border-radius: 5%;
+    width: 20rem;
+    float: right;
+}
+@media (max-width: 420px){
+    .container a{
+        display: none;
+    }
+    .top-row{
+        display: block;
+        padding-bottom: 40rem;
+    }
+    .top-col{
+        width: 82%;
+        height: 275px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+    .top-col:nth-child(1){
+        transform: translateY(100%);
+    }
+    .top-col:nth-child(2){
+        position: absolute;
+        transform: translateY(-110%);
+    }
+    .big-text-top{
+        font-size: 40px;
+        padding: 0.5rem 0 0 0;
+    }
+    .small-text-top{
+        font-size: 13px;
+        padding: .5rem 0 1.5rem 0;
+    } 
+    .top-col > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
